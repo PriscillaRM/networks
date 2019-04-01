@@ -1,6 +1,7 @@
 package neuralNetwork.univariate;
 
 import org.apache.commons.math3.analysis.UnivariateFunction;
+import org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction;
 
 public class NeuronSingle {
 
@@ -8,7 +9,7 @@ public class NeuronSingle {
     private Double x;
     private Double omegaNoise;
     private Double omegaX;
-    private UnivariateFunction activation;
+    private UnivariateDifferentiableFunction activation;
 
     private Double result;
 
@@ -37,5 +38,8 @@ public class NeuronSingle {
         }
 
     }
+
+
+
 
 }
